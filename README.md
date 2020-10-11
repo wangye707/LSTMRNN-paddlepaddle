@@ -32,13 +32,15 @@ en_text   //下载后的数据集放在这里
 ```
 1.开始训练
 python train.py 
-说明：此处会调用readdata.py中的函数，生成字典文件‘word2id_dict’。
-     训练的默认超参数均在train.py中可以查看
-     模型会保存至model_path路径中
+说明：此处会调用readdata.py中的函数，生成字典文件‘word2id_dict’
+      训练的默认超参数均在train.py中可以查看
+      模型会保存至model_path路径中
+      因GPU设备环境限制可以将代码中的use_gpu = True改为False，采用cpu训练
 2.评估网络模型
 python infer.py 
 说明：infer.py中的model_path是指定的模型文件路径，例如默认的为：model_path = 'model_path/500'
-     预测的文件会生成至save_path文件中，生成为txt文件
+      预测的文件会生成至save_path文件中，生成为txt文件
+      因GPU设备环境限制可以将代码中的use_gpu = True改为False，采用cpu训练
 ```
 训练部分迭代过程展示：
 ```
