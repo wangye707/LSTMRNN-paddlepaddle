@@ -140,6 +140,7 @@ def build_batch(word2id_dict, corpus,label, batch_size, epoch_num, max_seq_len, 
                 yield np.array(sentence_batch).astype("int64"), np.array(sentence_label_batch).astype("int64")
                 sentence_batch = []
                 sentence_label_batch = []
+                
 def build_batch_infer(word2id_dict, corpus,batch_size,max_seq_len):
 
     sentence_batch = []
