@@ -1,1 +1,2 @@
-paddlepaddle
+paddlepaddle_gpu==1.8.4.post97
+numpy==1.16.4
